@@ -7,7 +7,7 @@ import streamlit as st
 st.set_page_config(layout='wide')
 
 # le a base de dados do dashboard
-df = pd.read_csv('/base_rh.csv', sep=',')
+df = pd.read_csv('base_rh.csv', sep=',')
 
 # cria um slider para que o usuário consiga alterar a largura do gráfico
 width = st.slider('Escolha o tamanho do gráfico:',
@@ -16,7 +16,7 @@ width = st.slider('Escolha o tamanho do gráfico:',
 
 ##################################################################
 # Funções para gerar gráficos da página da Análise Univariada
-##################################################################
+##################################################################  
 
 # Função que cria um gráfico de barras
 def constroi_grafico_barras(variavel):
