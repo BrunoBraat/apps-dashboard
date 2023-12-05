@@ -7,7 +7,7 @@ import streamlit as st
 st.set_page_config(layout='wide')
 
 # le a base de dados do dashboard
-df = pd.read_csv('../Base de Dados/base_rh.csv', sep=',')
+df = pd.read_csv('/base_rh.csv', sep=',')
 
 # cria um slider para que o usuário consiga alterar a largura do gráfico
 width = st.slider('Escolha o tamanho do gráfico:',
